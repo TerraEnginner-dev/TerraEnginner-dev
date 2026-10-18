@@ -1,27 +1,25 @@
-### Felix Bauer // Munich
+# Felix Bauer
 
-Backend systems engineer specializing in database drivers, connection lifecycles, and high-throughput caching layers.
-
-`
-Stack: Python 3.11+ • AsyncIO • Redis • PostgreSQL • C Extensions
-Focus: Connection Pooling • Serialization Efficiency • Protocol Invariants
-`
+Backend systems engineer based in Munich, Germany.  
+Specializing in database drivers, connection lifecycles, and high-throughput caching layers.
 
 ---
 
-#### 🔭 Upstream Tracks & Focus Areas
+### 🗄️ Open Source Projects & Focus
 
-* **[redis/redis-py](https://github.com/redis/redis-py)** — Cluster command routing, socket timeout handling, and pipeline buffering.
-* **[MagicStack/asyncpg](https://github.com/MagicStack/asyncpg)** — Prepared statement caches, binary protocol decoding, and pool eviction bounds.
-* **[sqlalchemy/sqlalchemy](https://github.com/sqlalchemy/sqlalchemy)** — Async dialect wrappers and connection pool health checks.
-
----
-
-#### ⚙️ Engineering Principles & Workflow
-
-1. **Zero Resource Leaks**: Sockets, locks, and prepared statements must be strictly reclaimed during task cancellations.
-2. **Atomic Regression Tests**: Every bug report must be accompanied by an isolated reproducer before any code is modified.
-3. **Pre-Flight Invariant Validation**: Before committing upstream PRs, diffs are minimized and validated using [ZeroSlop™ CI](https://github.com/marketplace/actions/zeroslop-by-ribbsaeter-systems) to guarantee clean, green CI runs.
+| Ecosystem | Domain | Focus Area |
+|---|---|---|
+| **Database Drivers** | Connection Pools | Lifecycle handling, timeout recovery, and pool exhaustion guards |
+| **Caching Systems** | Redis / Key-Value | Pipeline batching, TTL expiration logic, and serialization safety |
+| **ORM & Query Builders** | Query Compilation | Parameter binding, dialect edge cases, and connection pinning |
 
 ---
-*Built with Python, Linux, and pre-flight verified with ZeroSlop CI.*
+
+### ⚙️ Engineering Principles
+
+1. **Defensive Concurrency**: Thread-safety and async task safety at connection pool boundaries.
+2. **Minimal Overhead**: Zero redundant allocations inside hot query execution loops.
+3. **Comprehensive Regression Testing**: Verifying connection drop and failover scenarios in local CI.
+
+---
+*Python 3.11+ • AsyncIO • Redis • PostgreSQL • SQLAlchemy • Linux*
