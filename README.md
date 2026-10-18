@@ -1,5 +1,10 @@
 # Felix Bauer
 
+<p align="center">
+  <img src="assets/dev_header.png" alt="Developer Terminal" width="100%" style="border-radius: 10px;">
+</p>
+
+
 Backend systems engineer based in Munich, Germany.  
 Specializing in database drivers, connection lifecycles, and high-throughput caching layers.
 
