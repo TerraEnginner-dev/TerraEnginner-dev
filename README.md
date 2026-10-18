@@ -1,16 +1,27 @@
-## Hi there 👋
+### Felix Bauer // Munich
 
-<!--
-**TerraEnginner-dev/TerraEnginner-dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend systems engineer specializing in database drivers, connection lifecycles, and high-throughput caching layers.
 
-Here are some ideas to get you started:
+`
+Stack: Python 3.11+ • AsyncIO • Redis • PostgreSQL • C Extensions
+Focus: Connection Pooling • Serialization Efficiency • Protocol Invariants
+`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+#### 🔭 Upstream Tracks & Focus Areas
+
+* **[redis/redis-py](https://github.com/redis/redis-py)** — Cluster command routing, socket timeout handling, and pipeline buffering.
+* **[MagicStack/asyncpg](https://github.com/MagicStack/asyncpg)** — Prepared statement caches, binary protocol decoding, and pool eviction bounds.
+* **[sqlalchemy/sqlalchemy](https://github.com/sqlalchemy/sqlalchemy)** — Async dialect wrappers and connection pool health checks.
+
+---
+
+#### ⚙️ Engineering Principles & Workflow
+
+1. **Zero Resource Leaks**: Sockets, locks, and prepared statements must be strictly reclaimed during task cancellations.
+2. **Atomic Regression Tests**: Every bug report must be accompanied by an isolated reproducer before any code is modified.
+3. **Pre-Flight Invariant Validation**: Before committing upstream PRs, diffs are minimized and validated using [ZeroSlop™ CI](https://github.com/marketplace/actions/zeroslop-by-ribbsaeter-systems) to guarantee clean, green CI runs.
+
+---
+*Built with Python, Linux, and pre-flight verified with ZeroSlop CI.*
